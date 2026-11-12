@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vestimentas Tradicionales de Santa Cruz</title>
+
+<style>
+:root {
+  --verde: #087653;
+  --verde-claro: #e4f4eb;
+  --dorado: #d5a642;
+  --texto: #26352e;
+  --linea: #dcebe2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 25px 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #e8f5ec, #f7f6ed, #e1f0e7);
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+.pagina {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px;
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 8px 25px rgba(0, 80, 50, .12);
+}
+
+header {
+  text-align: center;
+  padding: 30px 18px;
+  background: linear-gradient(135deg, #087653, #16a06e);
+  color: white;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  border-bottom: 5px solid var(--dorado);
+}
+
+header h1 {
+  margin: 0 0 10px;
+  font-size: clamp(26px, 5vw, 39px);
+}
+
+header p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.intro {
+  background: #f1faf4;
+  padding: 22px;
+  border-radius: 15px;
+  border-left: 6px solid var(--verde);
+  margin-bottom: 25px;
+}
+
+h2 {
+  color: var(--verde);
+  margin-top: 0;
+}
+
+.intro p {
+  font-size: 17px;
+  text-align: justify;
+}
+
+.prenda {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  gap: 25px;
+  align-items: center;
+  padding: 24px 0;
+  border-bottom: 2px dashed var(--linea);
+}
+
+.foto {
+  width: 100%;
+  height: 230px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 12px;
+  background: linear-gradient(135deg, #e6f5eb, #d3ecdc);
+  border: 2px solid #c5e2d0;
+  border-radius: 18px;
+  color: #39775a;
+  font-size: 14px;
+}
+
+.foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.prenda h3 {
+  color: var(--verde);
+  font-size: 24px;
+  margin: 0 0 12px;
+}
+
+.descripcion {
+  margin: 0;
+  font-size: 17px;
+  text-align: justify;
+}
+
+.dato {
+  margin-top: 30px;
+  padding: 23px;
+  background: #f1faf4;
+  border-radius: 16px;
+  border-left: 6px solid var(--dorado);
+}
+
+.dato h2 {
+  font-size: 22px;
+}
+
+.dato p {
+  font-size: 17px;
+  text-align: justify;
+}
+
+.boton {
+  display: block;
+  width: fit-content;
+  margin: 28px auto 0;
+  padding: 13px 24px;
+  border-radius: 30px;
+  background: var(--verde);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.boton:hover {
+  background: #04573d;
+  transform: scale(1.04);
+}
+
+.ayuda {
+  text-align: center;
+  color: #718078;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+@media(max-width: 650px) {
+  body {
+    padding: 12px 8px;
+  }
+
+  .pagina {
+    padding: 17px 14px;
+    border-radius: 17px;
+  }
+
+  .prenda {
+    grid-template-columns: 1fr;
+    gap: 13px;
+    padding: 22px 0;
+  }
+
+  .foto {
+    height: 230px;
+  }
+
+  .prenda h3 {
+    font-size: 21px;
+  }
+
+  .descripcion,
+  .intro p,
+  .dato p {
+    font-size: 16px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<main class="pagina">
+
+<header>
+  <h1>🌿 Vestimentas Tradicionales de Santa Cruz 🌺</h1>
+  <p>Prendas que representan la cultura y la identidad cruceña</p>
+</header>
+
+<section class="intro">
+  <h2>La vestimenta tradicional cruceña</h2>
+
+  <p>
+    Santa Cruz cuenta con una gran diversidad cultural que se
+    expresa en las costumbres y vestimentas de sus pueblos.
+    El clima cálido de los llanos influye en el uso de prendas
+    frescas, ligeras y cómodas. Una de las prendas más conocidas
+    en las presentaciones folclóricas es el tipoy.
+  </p>
+
+  <p>
+    Los sombreros, pañuelos, camisas y otros accesorios también
+    forman parte de algunas expresiones tradicionales de la
+    región. Estas prendas representan la historia, la identidad
+    y las tradiciones de sus habitantes.
+  </p>
+</section>
+
+<section class="prenda">
+  <div class="foto">
+    <img src="santacruz.jpeg" alt="Mujer con tipoy cruceño">
+  </div>
+
+  <div>
+    <h3>1. Tipoy</h3>
+    <p class="descripcion">
+      Es un vestido largo, suelto y generalmente colorido.
+      Puede presentar detalles decorativos y diseños sencillos.
+      Su forma amplia permite mayor comodidad en el clima cálido
+      y es una de las prendas más representativas de las
+      presentaciones culturales cruceñas.
+    </p>
+  </div>
+</section>
+
+<section class="prenda">
+  <div class="foto">
+    <img src="psobre.jpeg" alt="Sombrero de sao">
+  </div>
+
+  <div>
+    <h3>2. Sombrero de sao</h3>
+    <p class="descripcion">
+      Es un sombrero elaborado artesanalmente con fibras
+      vegetales de la palmera conocida como sao. Su función
+      principal es proteger del sol. También representa
+      los conocimientos artesanales y las tradiciones
+      de los llanos cruceños.
+    </p>
+  </div>
+</section>
+
+<section class="prenda">
+  <div class="foto">
+    <img src="schicod.jpeg" alt="Pañuelo tradicional cruceño">
+  </div>
+
+  <div>
+    <h3>3. Pañuelo</h3>
+    <p class="descripcion">
+      Es un accesorio que puede acompañar la vestimenta
+      en bailes, fiestas y celebraciones. Se utiliza de
+      diferentes maneras y sus colores aportan movimiento
+      y alegría a las presentaciones tradicionales.
+    </p>
+  </div>
+</section>
+
+<section class="prenda">
+  <div class="foto">
+    <img src="schico.jpeg" alt="Camisa y pantalón tradicionales">
+  </div>
+
+  <div>
+    <h3>4. Camisa y pantalón</h3>
+    <p class="descripcion">
+      En algunas representaciones tradicionales, los
+      hombres utilizan camisas frescas y pantalones
+      de corte sencillo. Son prendas cómodas que se
+      adaptan al clima y a las actividades de la región.
+    </p>
+  </div>
+</section>
+
+<section class="prenda">
+  <div class="foto">
+    <img src="schico.jpeg" alt="Abarcas tradicionales">
+  </div>
+
+  <div>
+    <h3>5. Abarcas o sandalias</h3>
+    <p class="descripcion">
+      Son tipos de calzado sencillos y prácticos que
+      pueden utilizarse en distintas comunidades.
+      Su diseño permite caminar con comodidad y
+      responde a las necesidades de la vida cotidiana.
+    </p>
+  </div>
+</section>
+
+<section class="prenda">
+  <div class="foto">
+    <img src="sflores.jpeg" alt="Accesorios de vestimenta cruceña">
+  </div>
+
+  <div>
+    <h3>6. Accesorios y detalles</h3>
+    <p class="descripcion">
+      En las celebraciones se pueden añadir adornos,
+      pañuelos y otros elementos propios de cada
+      comunidad. Estos detalles complementan la
+      vestimenta y muestran la diversidad de las
+      costumbres locales.
+    </p>
+  </div>
+</section>
+
+<section class="dato">
+  <h2>🌺 ¿Qué representa la vestimenta cruceña?</h2>
+
+  <p>
+    La vestimenta tradicional de Santa Cruz representa
+    la identidad, la alegría y las costumbres de sus
+    habitantes. Sus prendas frescas muestran la
+    adaptación al clima cálido, mientras que los
+    tejidos, sombreros y accesorios reflejan los
+    conocimientos artesanales y la diversidad cultural
+    del departamento.
+  </p>
+
+  <h2>💡 Dato curioso</h2>
+
+  <p>
+    El sombrero de sao es reconocido por su elaboración
+    artesanal con fibras vegetales. Su fabricación
+    forma parte de conocimientos tradicionales que
+    se transmiten entre generaciones. Además, el tipoy
+    es una prenda muy conocida en las expresiones
+    culturales cruceñas, aunque no representa la
+    vestimenta diaria de todas las mujeres del departamento.
+  </p>
+</section>
+
+<a class="boton" href="index.html">
+  ← Volver a la página principal
+</a>
+
+<p class="ayuda">
+  Guarda las fotografías en la misma carpeta que este archivo HTML.
+</p>
+
+</main>
+
+</body>
+</html>

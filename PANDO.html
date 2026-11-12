@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vestimentas tradicionales de Pando</title>
+
+<style>
+:root {
+  --rojo: #8b1e2d;
+  --fondo: #f3f4f6;
+  --texto: #292929;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--fondo);
+  color: var(--texto);
+  line-height: 1.7;
+}
+
+/* ENCABEZADO */
+header {
+  background: linear-gradient(135deg, #641522, #a83b4b);
+  color: white;
+  text-align: center;
+  padding: 38px 15px;
+}
+
+header h1 {
+  margin: 0 0 10px;
+  font-size: 30px;
+}
+
+header p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* CONTENIDO */
+main {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 16px;
+}
+
+.panel {
+  background: white;
+  border-radius: 15px;
+  padding: 28px;
+  box-shadow: 0 4px 15px #00000012;
+}
+
+.intro {
+  font-size: 16px;
+  text-align: justify;
+}
+
+/* TITULOS */
+h2 {
+  color: var(--rojo);
+  border-bottom: 2px solid #ead5d8;
+  padding-bottom: 10px;
+  margin-top: 32px;
+}
+
+h3 {
+  color: var(--rojo);
+  margin-top: 0;
+}
+
+/* PRENDAS */
+.prenda {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  padding: 24px 0;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.prenda:last-of-type {
+  border-bottom: none;
+}
+
+/* FOTOGRAFIAS */
+.imagen {
+  flex: 0 0 300px;
+  text-align: center;
+}
+
+.imagen img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px #00000020;
+  display: block;
+}
+
+.imagen small {
+  display: block;
+  margin-top: 8px;
+  color: #777;
+  font-size: 13px;
+}
+
+.detalle {
+  flex: 1;
+}
+
+.detalle p {
+  margin: 0;
+  text-align: justify;
+}
+
+/* DATO CULTURAL */
+.dato {
+  background: #fff5e8;
+  border-left: 5px solid #d99a36;
+  padding: 18px;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+/* BOTON */
+.volver {
+  display: inline-block;
+  margin-top: 25px;
+  background: var(--rojo);
+  color: white;
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  transition: .3s;
+}
+
+.volver:hover {
+  background: #641522;
+}
+
+/* PIE DE PAGINA */
+footer {
+  text-align: center;
+  background: #641522;
+  color: white;
+  padding: 22px;
+  margin-top: 35px;
+}
+
+/* CELULARES */
+@media(max-width: 700px) {
+  header h1 {
+    font-size: 23px;
+  }
+
+  .panel {
+    padding: 18px;
+  }
+
+  .prenda {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .imagen {
+    flex: auto;
+    width: 100%;
+  }
+
+  .imagen img {
+    height: 230px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ENCABEZADO -->
+<header>
+  <h1>Vestimentas tradicionales de Pando</h1>
+  <p>Prendas, costumbres e identidad cultural del norte amazónico de Bolivia</p>
+</header>
+
+<main>
+
+<section class="panel">
+
+<!-- INTRODUCCION -->
+<p class="intro">
+Pando se encuentra en la región amazónica de Bolivia y posee una cultura relacionada con el clima cálido, los ríos y la vida en el bosque. Su vestimenta tradicional puede variar entre comunidades indígenas, poblaciones rurales y ciudades. Por eso, no existe un solo traje que represente a todos sus habitantes. En las actividades cotidianas se utilizan prendas frescas y cómodas, mientras que en celebraciones culturales pueden presentarse vestimentas propias de cada pueblo.
+</p>
+
+<h2>Prendas y elementos de la vestimenta</h2>
+
+<!-- PRENDA 1 -->
+<article class="prenda">
+
+<div class="imagen">
+<img src="pando.jpeg"
+alt="Vestimenta indígena amazónica de Pando">
+<small>Vestimenta indígena amazónica</small>
+</div>
+
+<div class="detalle">
+<h3>1. Túnicas y vestidos tradicionales</h3>
+<p>
+En algunas comunidades indígenas de la Amazonía se utilizan túnicas o vestidos de formas sencillas, elaborados con telas ligeras. Sus diseños y adornos dependen de las costumbres de cada pueblo y pueden expresar pertenencia cultural.
+</p>
+</div>
+
+</article>
+
+<!-- PRENDA 2 -->
+<article class="prenda">
+
+<div class="imagen">
+<img src="pandom.jpeg"
+alt="Camisas y blusas de telas ligeras">
+<small>Prendas frescas de la región amazónica</small>
+</div>
+
+<div class="detalle">
+<h3>2. Camisas y blusas frescas</h3>
+<p>
+Las camisas y blusas de telas livianas son comunes por las altas temperaturas de la región. Además de brindar comodidad, sus colores y formas pueden variar según la comunidad, la ocasión y las preferencias de cada persona.
+</p>
+</div>
+
+</article>
+
+<!-- PRENDA 3 -->
+<article class="prenda">
+
+<div class="imagen">
+<img src="pchica.jpeg"
+alt="Pantalones y faldas de uso cotidiano">
+<small>Vestimenta cotidiana</small>
+</div>
+
+<div class="detalle">
+<h3>3. Pantalones y faldas</h3>
+<p>
+Los pantalones y las faldas forman parte de la vestimenta cotidiana de muchas familias pandinas. Se prefieren prendas prácticas que permitan realizar actividades diarias en un clima cálido y húmedo.
+</p>
+</div>
+
+</article>
+
+<!-- PRENDA 4 -->
+<article class="prenda">
+
+<div class="imagen">
+<img src="pernadoco.jpeg"
+alt="Adornos y accesorios artesanales amazónicos">
+<small>Adornos artesanales amazónicos</small>
+</div>
+
+<div class="detalle">
+<h3>4. Adornos y accesorios</h3>
+<p>
+En determinadas expresiones culturales se emplean collares, pulseras y otros adornos artesanales. Algunos pueden elaborarse con semillas, fibras y materiales de la naturaleza, de acuerdo con las tradiciones de cada comunidad.
+</p>
+</div>
+
+</article>
+
+<!-- PRENDA 5 -->
+<article class="prenda">
+
+<div class="imagen">
+<img src="psobre.jpeg"
+alt="sombre utilizado en la región amazónica">
+<small> sombre de uso cotidiano</small>
+</div>
+
+<div class="detalle">
+<h3>5. sombre cómodo</h3>
+<p>
+El calzado utilizado en la vida diaria suele ser práctico y adecuado para caminar y realizar actividades en la región. En algunas comunidades y ocasiones también se conservan formas tradicionales de vestir según sus propias costumbres.
+</p>
+</div>
+
+</article>
+
+<!-- PRENDA 6 -->
+<article class="prenda">
+
+<div class="imagen">
+<img src="pchicademar.jpeg"
+alt="Celebración cultural de Pando">
+<small>Expresiones culturales de Pando</small>
+</div>
+
+<div class="detalle">
+<h3>6. Vestimenta para celebraciones culturales</h3>
+<p>
+Durante fiestas, encuentros y presentaciones culturales, algunas comunidades muestran prendas y adornos que representan su historia y sus tradiciones. Estas vestimentas no son iguales para todos los pueblos de Pando.
+</p>
+</div>
+
+</article>
+
+<!-- DATO CULTURAL -->
+<div class="dato">
+<strong>Dato curioso:</strong>
+<p>
+Pando forma parte de la Amazonía boliviana. En esta región, la vestimenta está muy relacionada con el clima cálido y con las costumbres de distintos pueblos indígenas. Los adornos artesanales pueden tener un valor cultural y representar la relación de las comunidades con su entorno natural.
+</p>
+</div>
+
+<!-- BOTON VOLVER -->
+<a class="volver" href="index.html">
+← Volver a la página principal
+</a>
+
+</section>
+</main>
+
+<!-- PIE DE PAGINA -->
+<footer>
+Proyecto educativo: Vestimentas tradicionales de Bolivia
+</footer>
+
+</body>
+</html>

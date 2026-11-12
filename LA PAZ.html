@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vestimenta de la Chola Paceña</title>
+
+  <style>
+    :root {
+      --rojo: #a83e58;
+      --rosa: #f8e6eb;
+      --texto: #342b2e;
+      --linea: #efd6dd;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 28px 16px;
+      background: linear-gradient(135deg, #fcecef, #f8f3f1, #f6e3e8);
+      color: var(--texto);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    .pagina {
+      width: min(950px, 100%);
+      margin: auto;
+      padding: 32px;
+      background: white;
+      border-radius: 25px;
+      box-shadow: 0 8px 28px rgba(120, 40, 65, .12);
+      border: 1px solid #f0dce2;
+    }
+
+    header {
+      text-align: center;
+      padding: 25px 15px;
+      background: linear-gradient(135deg, #f8dce4, #fff0f3);
+      border-radius: 20px;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      color: var(--rojo);
+      font-size: clamp(27px, 5vw, 39px);
+    }
+
+    .subtitulo {
+      margin: 0;
+      color: #76545e;
+      font-size: 16px;
+    }
+
+    .introduccion {
+      padding: 20px;
+      background: #fff8fa;
+      border-left: 5px solid var(--rojo);
+      border-radius: 12px;
+      font-size: 17px;
+      margin-bottom: 20px;
+    }
+
+    .prenda {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 25px;
+      align-items: center;
+      padding: 24px 0;
+      border-bottom: 2px dashed var(--linea);
+    }
+
+    .foto {
+      width: 100%;
+      height: 235px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #fce8ed, #f5d9e1);
+      border: 2px solid #efd1da;
+      color: #925365;
+      text-align: center;
+      padding: 12px;
+      font-size: 14px;
+    }
+
+    .foto img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      color: var(--rojo);
+      font-size: 24px;
+    }
+
+    .descripcion {
+      margin: 0;
+      font-size: 17px;
+      text-align: justify;
+    }
+
+    .nota {
+      margin-top: 30px;
+      padding: 22px;
+      border-radius: 16px;
+      background: #fff1f4;
+      border: 1px solid #f0d1da;
+      border-left: 6px solid var(--rojo);
+    }
+
+    .nota h2 {
+      font-size: 22px;
+    }
+
+    .nota p {
+      margin: 0;
+      font-size: 17px;
+    }
+
+    .volver {
+      display: block;
+      width: fit-content;
+      margin: 28px auto 0;
+      padding: 13px 22px;
+      border-radius: 30px;
+      background: var(--rojo);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: .3s;
+    }
+
+    .volver:hover {
+      background: #812c43;
+      transform: scale(1.04);
+    }
+
+    .ayuda {
+      color: #88747a;
+      font-size: 13px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 12px 8px;
+      }
+
+      .pagina {
+        padding: 18px 14px;
+        border-radius: 17px;
+      }
+
+      .prenda {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 22px 0;
+      }
+
+      .foto {
+        height: 230px;
+      }
+
+      h2 {
+        font-size: 21px;
+      }
+
+      .descripcion {
+        font-size: 16px;
+      }
+
+      .introduccion {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="pagina">
+
+    <header>
+      <h1>🌺 Vestimenta de la Chola Paceña 🌺</h1>
+      <p class="subtitulo">
+        Elegancia, tradición e identidad cultural de La Paz.
+      </p>
+    </header>
+
+    <p class="introduccion">
+      La chola paceña es una de las figuras más representativas
+      de la cultura de La Paz. Su vestimenta tradicional se
+      caracteriza por la pollera, la manta, el sombrero bombín,
+      la blusa y otros accesorios. Cada prenda representa una
+      historia de tradición, identidad y orgullo cultural que
+      continúa presente en la sociedad boliviana.
+    </p>
+
+    <section class="prenda">
+      <div class="foto">
+        <img src="lapazchi.jpeg" alt="Pollera de la chola paceña">
+      </div>
+      <div>
+        <h2>1. Pollera</h2>
+        <p class="descripcion">
+          Es una falda amplia y con bastante vuelo, generalmente
+          formada por varias capas de tela y pliegues. Puede
+          presentar diferentes colores y diseños. Es una de las
+          prendas más representativas de la chola paceña y
+          expresa identidad y pertenencia cultural.
+        </p>
+      </div>
+    </section>
+
+    <section class="prenda">
+      <div class="foto">
+        <img src="lbrusa.jpeg" alt="Manta de la chola paceña">
+      </div>
+      <div>
+        <h2>2. Manta</h2>
+        <p class="descripcion">
+          Se coloca sobre los hombros y ayuda a proteger del frío.
+          Puede tener bordados, tejidos, flecos y adornos
+          decorativos. Sus colores y diseños complementan
+          la pollera y aportan elegancia al conjunto.
+        </p>
+      </div>
+    </section>
+
+    <section class="prenda">
+      <div class="foto">
+        <img src="lsobre.jpeg" alt="Sombrero bombín">
+      </div>
+      <div>
+        <h2>3. Sombrero bombín</h2>
+        <p class="descripcion">
+          Es uno de los elementos más reconocidos de la
+          vestimenta de la chola paceña. Tiene una copa
+          redondeada y una forma característica. Aunque
+          tiene origen extranjero, fue adoptado por las
+          mujeres paceñas y se convirtió en un símbolo
+          de su identidad cultural.
+        </p>
+      </div>
+    </section>
+
+    <section class="prenda">
+      <div class="foto">
+        <img src="lbrusa.jpeg" alt="Blusa tradicional paceña">
+      </div>
+      <div>
+        <h2>4. Blusa</h2>
+        <p class="descripcion">
+          Complementa la vestimenta y puede presentar
+          encajes, bordados, botones y detalles decorativos.
+          Se combina con la pollera y la manta para formar
+          un conjunto tradicional y elegante.
+        </p>
+      </div>
+    </section>
+
+    <section class="prenda">
+      <div class="foto">
+        <img src="pagu.jpeg" alt="Enaguas tradicionales">
+      </div>
+      <div>
+        <h2>5. Enaguas</h2>
+        <p class="descripcion">
+          Son prendas interiores que se utilizan debajo
+          de la pollera. Ayudan a darle volumen y forma
+          a la falda. Su cantidad y estilo pueden variar
+          según la vestimenta y la ocasión.
+        </p>
+      </div>
+    </section>
+
+    <section class="prenda">
+      <div class="foto">
+        <img src="lzapa.jpeg" alt="Zapatos tradicionales">
+      </div>
+      <div>
+        <h2>6. Zapatos</h2>
+        <p class="descripcion">
+          Completan el conjunto tradicional. Pueden ser
+          zapatos de tacón bajo o medio, con diferentes
+          diseños y materiales. Su estilo varía según
+          la ocasión y las preferencias de cada mujer.
+        </p>
+      </div>
+    </section>
+
+    <aside class="nota">
+      <h2>💡 Dato curioso</h2>
+      <p>
+        El sombrero bombín fue incorporado a la vestimenta
+        de las mujeres paceñas hace muchas décadas.
+        Con el tiempo, se convirtió en uno de los símbolos
+        más conocidos de la chola paceña y de la identidad
+        cultural de La Paz.
+      </p>
+    </aside>
+
+    <a class="volver" href="index.html">
+      ← Volver a la página principal
+    </a>
+
+    <p class="ayuda">
+      Guarda las fotografías en la misma carpeta que este
+      archivo HTML y utiliza los nombres indicados en el código.
+    </p>
+
+  </main>
+</body>
+</html>

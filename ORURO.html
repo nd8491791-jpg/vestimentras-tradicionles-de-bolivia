@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vestimentas Tradicionales de Oruro</title>
+  <style>
+    :root { --rojo:#b94f62; --texto:#202124; --linea:#e8e5e5; }
+    * { box-sizing:border-box; }
+    body {
+      margin:0; padding:28px 16px; background:#f5f5f5; color:var(--texto);
+      font-family:Arial,Helvetica,sans-serif; line-height:1.55;
+    }
+    .pagina {
+      width:min(900px,100%); margin:0 auto; padding:30px; background:#fff;
+      border:1px solid #e4e1e1; border-radius:22px;
+      box-shadow:0 5px 22px rgba(0,0,0,.05);
+    }
+    header { margin-bottom:24px; }
+    h1 { margin:0 0 8px; color:var(--rojo); font-size:clamp(27px,5vw,38px); line-height:1.2; }
+    .subtitulo { margin:0; color:#666; font-size:16px; }
+    .introduccion { margin:22px 0 8px; font-size:17px; }
+    .prenda {
+      display:grid; grid-template-columns:200px 1fr; gap:24px; align-items:center;
+      padding:24px 0; border-bottom:1px solid var(--linea);
+    }
+    .foto {
+      width:100%; height:230px; display:flex; align-items:center; justify-content:center;
+      overflow:hidden; border-radius:20px; background:#f1eeee; color:#777;
+      text-align:center; padding:14px; border:1px solid #e6e1e1; font-size:14px;
+    }
+    .foto img { width:100%; height:100%; object-fit:cover; display:block; }
+    h2 { margin:0 0 12px; font-size:24px; }
+    .descripcion { margin:0; font-size:19px; }
+    .nota {
+      margin-top:28px; padding:20px 22px; border-left:5px solid var(--rojo);
+      background:#fbf5f6; border-radius:12px;
+    }
+    .nota h2 { color:var(--rojo); font-size:21px; }
+    .nota p { margin:0; font-size:17px; }
+    .volver {
+      display:inline-block; margin-top:26px; padding:11px 18px; border-radius:9px;
+      background:var(--rojo); color:white; text-decoration:none; font-weight:bold;
+    }
+    .ayuda { color:#777; font-size:13px; margin-top:18px; }
+    @media(max-width:600px) {
+      body { padding:12px 8px; }
+      .pagina { padding:20px 16px; border-radius:16px; }
+      .prenda { grid-template-columns:112px 1fr; gap:16px; padding:20px 0; }
+      .foto { height:165px; border-radius:15px; font-size:12px; padding:8px; }
+      h2 { font-size:19px; margin-bottom:7px; }
+      .descripcion { font-size:16px; }
+      .nota { padding:16px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="pagina">
+    <header>
+      <h1>Vestimentas Tradicionales de Oruro</h1>
+      <p class="subtitulo">Conoce las prendas, los tejidos y la identidad cultural de sus comunidades.</p>
+    </header>
+
+    <p class="introduccion">
+      Oruro posee una gran riqueza cultural, relacionada con los pueblos aymaras, quechuas y otras comunidades del altiplano. Sus vestimentas tradicionales varían de acuerdo con cada municipio y comunidad. Entre las prendas que se encuentran en distintas zonas están las polleras, mantas, aguayos, ponchos, chullos y sombreros. Los tejidos, colores y formas de estas prendas reflejan la historia, las actividades cotidianas y los conocimientos artesanales que se conservan de generación en generación.
+    </p>
+
+    <section class="prenda">
+      <div class="foto">Coloca aquí una fotografía de la pollera tradicional de Oruro</div>
+      <div>
+        <h2>1. Pollera</h2>
+        <p class="descripcion">Es una falda amplia utilizada por mujeres de distintas comunidades. Puede tener varios colores, pliegues y adornos. Su diseño cambia según la localidad y la ocasión, y forma parte de la identidad y las costumbres de muchas familias orureñas.</p>
+      </div>
+    </section>
+
+    <section class="prenda">
+      <div class="foto">Coloca aquí una fotografía de la manta</div>
+      <div>
+        <h2>2. Manta</h2>
+        <p class="descripcion">Se lleva sobre los hombros para abrigarse y complementar la vestimenta. Puede presentar tejidos, bordados o flecos. Además de su utilidad, sus detalles muestran el trabajo y la creatividad de las artesanas.</p>
+      </div>
+    </section>
+
+    <section class="prenda">
+      <div class="foto">Coloca aquí una fotografía del aguayo</div>
+      <div>
+        <h2>3. Aguayo</h2>
+        <p class="descripcion">Es un tejido andino de forma rectangular que se utiliza para cargar productos, transportar objetos o llevar a los niños. Sus colores y figuras pueden expresar tradiciones y conocimientos textiles propios de cada comunidad.</p>
+      </div>
+    </section>
+
+    <section class="prenda">
+      <div class="foto">Coloca aquí una fotografía del poncho tradicional</div>
+      <div>
+        <h2>4. Poncho</h2>
+        <p class="descripcion">Es una prenda de abrigo usada principalmente por hombres en diferentes comunidades del altiplano. Generalmente se elabora con lana y ayuda a proteger del frío y del viento. Sus colores y diseños pueden variar de una región a otra.</p>
+      </div>
+    </section>
+
+    <section class="prenda">
+      <div class="foto">Coloca aquí una fotografía del chullo</div>
+      <div>
+        <h2>5. Chullo</h2>
+        <p class="descripcion">Es un gorro tejido que cubre las orejas y protege la cabeza del frío. Puede tener orejeras, figuras y combinaciones de colores. Es una prenda práctica para el clima frío del altiplano.</p>
+      </div>
+    </section>
+
+    <section class="prenda">
+      <div class="foto">Coloca aquí una fotografía del sombrero tradicional</div>
+      <div>
+        <h2>6. Sombrero</h2>
+        <p class="descripcion">En Oruro se utilizan distintos tipos de sombreros, según la comunidad y la vestimenta. Sirven para protegerse del sol y también pueden formar parte de la presentación tradicional de hombres y mujeres.</p>
+      </div>
+    </section>
+
+    <aside class="nota">
+      <h2>💡 Dato curioso</h2>
+      <p>Oruro reúne comunidades con tradiciones textiles diferentes. Por eso, no existe una sola vestimenta que represente por igual a todos sus municipios: los materiales, colores y diseños pueden cambiar según la comunidad y el uso de cada prenda.</p>
+    </aside>
+
+    <a class="volver" href="index.html">Volver a la página principal</a>
+    <p class="ayuda">Para colocar tus fotografías, reemplaza cada recuadro por una etiqueta de imagen, por ejemplo: &lt;img src="pollera-oruro.jpg" alt="Pollera tradicional de Oruro"&gt;. Guarda las fotografías en la misma carpeta que este archivo. Verifica que cada imagen corresponda al municipio o comunidad que describes.</p>
+  </main>
+</body>
+</html>

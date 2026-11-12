@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Vestimentas Tradicionales del Beni</title>
+
+<style>
+:root {
+  --verde: #007a5e;
+  --texto: #292929;
+  --linea: #e5e7eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 28px 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f4f6;
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+.pagina {
+  max-width: 950px;
+  margin: auto;
+  padding: 30px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 5px 22px rgba(0,0,0,.06);
+}
+
+header {
+  background: var(--verde);
+  color: white;
+  text-align: center;
+  padding: 28px 20px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: clamp(26px, 5vw, 38px);
+  line-height: 1.2;
+}
+
+.subtitulo {
+  margin: 10px 0 0;
+  font-size: 16px;
+}
+
+.introduccion {
+  margin: 22px 0;
+  font-size: 17px;
+  text-align: justify;
+}
+
+.prenda {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 24px;
+  align-items: center;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--linea);
+}
+
+.foto {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #eef5f1;
+  border: 1px solid #dce8e1;
+}
+
+.foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+h2 {
+  color: var(--verde);
+  font-size: 23px;
+  margin: 0 0 12px;
+}
+
+.descripcion {
+  margin: 0;
+  font-size: 17px;
+  text-align: justify;
+}
+
+.dato {
+  background: #f0f8f4;
+  padding: 22px;
+  border-left: 5px solid var(--verde);
+  border-radius: 12px;
+  margin-top: 28px;
+}
+
+.dato h2 {
+  font-size: 21px;
+}
+
+.dato p {
+  margin: 0 0 18px;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.dato p:last-child {
+  margin-bottom: 0;
+}
+
+.volver {
+  display: inline-block;
+  margin-top: 26px;
+  padding: 12px 20px;
+  background: var(--verde);
+  color: white;
+  text-decoration: none;
+  border-radius: 9px;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.volver:hover {
+  background: #005c47;
+}
+
+@media(max-width:600px) {
+  body {
+    padding: 12px 8px;
+  }
+
+  .pagina {
+    padding: 16px;
+    border-radius: 15px;
+  }
+
+  header {
+    padding: 23px 14px;
+  }
+
+  .prenda {
+    grid-template-columns: 112px 1fr;
+    gap: 15px;
+    padding: 19px 0;
+  }
+
+  .foto {
+    height: 165px;
+    border-radius: 12px;
+  }
+
+  h2 {
+    font-size: 19px;
+    margin-bottom: 7px;
+  }
+
+  .descripcion {
+    font-size: 14px;
+  }
+
+  .dato {
+    padding: 16px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<main class="pagina">
+
+<header>
+  <h1>Vestimentas Tradicionales del Beni</h1>
+  <p class="subtitulo">
+    Prendas que expresan la identidad y las costumbres benianas.
+  </p>
+</header>
+
+<section class="introduccion">
+  <h2>La vestimenta tradicional beniana</h2>
+
+  <p>
+    El departamento del Beni posee una gran diversidad cultural,
+    formada por pueblos indígenas y comunidades de los llanos
+    amazónicos. Su vestimenta tradicional está relacionada con
+    el clima cálido, las actividades cotidianas y las celebraciones
+    culturales. Por eso se utilizan prendas frescas, sencillas
+    y cómodas, aunque sus características pueden variar entre
+    pueblos y municipios.
+  </p>
+
+  <p>
+    En las presentaciones culturales se pueden observar vestidos,
+    camisas, pantalones, sombreros y accesorios que reflejan
+    la historia y las tradiciones de la región.
+  </p>
+</section>
+
+<section class="prenda">
+  <div class="foto">
+    <img src="beni.jpeg" alt="Vestido tradicional beniano">
+  </div>
+
+  <div>
+    <h2>1. Vestido tradicional</h2>
+    <p class="descripcion">
+      En algunas comunidades y presentaciones culturales se
+      utilizan vestidos ligeros, generalmente de telas frescas
+      y diseños coloridos. Representan la identidad y las
+      costumbres de las mujeres de la región.
+    </p>
+  </div>
+</section>
+
+<section class="prenda">
+  <div class="foto">
+    <img src="pandom.jpeg" alt="Camisa tradicional beniana">
+  </div>
+
+  <div>
+    <h2>2. Camisa</h2>
+    <p class="descripcion">
+      Las camisas de tela liviana son adecuadas para el clima
+      cálido del Beni. En actividades culturales pueden
+      acompañarse con detalles o accesorios que representan
+      las costumbres locales.
+    </p>
+  </div>
+</section>
+
+<section class="prenda">
+  <div class="foto">
+    <img src="bchico.jpeg" alt="Pantalón tradicional">
+  </div>
+
+  <div>
+    <h2>3. Pantalón</h2>
+    <p class="descripcion">
+      El pantalón, generalmente de corte sencillo y cómodo,
+      forma parte de la vestimenta masculina utilizada
+      en distintas actividades y representaciones tradicionales.
+    </p>
+  </div>
+</section>
+
+<section class="prenda">
+  <div class="foto">
+    <img src="psobre.jpeg" alt="Sombrero tradicional del Beni">
+  </div>
+
+  <div>
+    <h2>4. Sombrero</h2>
+    <p class="descripcion">
+      El sombrero ayuda a proteger del sol durante las actividades
+      al aire libre. También puede formar parte de la vestimenta
+      que se presenta en actos culturales y festividades.
+    </p>
+  </div>
+</section>
+
+
+
+<section class="prenda">
+  <div class="foto">
+    <img src="santacruz.jpeg" alt="Calzado tradicional">
+  </div>
+
+  <div>
+    <h2>5. Calzado</h2>
+    <p class="descripcion">
+      El calzado suele ser práctico y cómodo para caminar
+      y realizar actividades cotidianas. En algunas
+      representaciones se utilizan sandalias u otros
+      modelos sencillos.
+    </p>
+  </div>
+</section>
+
+<section class="dato">
+
+  <h2>¿Qué representa la vestimenta beniana en conjunto?</h2>
+
+  <p>
+    En conjunto, estas prendas reflejan la adaptación al clima
+    cálido de los llanos, la vida cotidiana y la diversidad
+    cultural del Beni. También ayudan a mantener vivas las
+    costumbres y a transmitir la identidad de sus pueblos
+    de una generación a otra.
+  </p>
+
+  <h2>💡 Dato curioso</h2>
+
+  <p>
+    El Beni reúne diversas culturas indígenas y tradiciones
+    de los pueblos amazónicos y de los llanos. Por eso no existe
+    una sola vestimenta que represente por igual a todos sus
+    municipios: las prendas y los accesorios pueden cambiar
+    según cada comunidad y celebración.
+  </p>
+
+</section>
+
+<a class="volver" href="index.html">
+  ← Volver a la página principal
+</a>
+
+</main>
+
+</body>
+</html>

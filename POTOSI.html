@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vestimentas Tradicionales de Potosí</title>
+
+<style>
+:root {
+  --vino: #963d55;
+  --dorado: #d5a44b;
+  --rosa: #f8e9ed;
+  --texto: #342b2e;
+  --linea: #ecd9df;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 28px 16px;
+  background: linear-gradient(135deg, #f8e9ed, #fff5e5, #eee8f5);
+  color: var(--texto);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+.pagina {
+  width: min(950px, 100%);
+  margin: auto;
+  padding: 32px;
+  background: white;
+  border-radius: 25px;
+  border: 1px solid #ecdce1;
+  box-shadow: 0 8px 28px rgba(80, 35, 50, .12);
+}
+
+header {
+  text-align: center;
+  padding: 30px 16px;
+  color: white;
+  background: linear-gradient(135deg, #87364e, #bd667b);
+  border-radius: 20px;
+  border-bottom: 5px solid var(--dorado);
+  margin-bottom: 25px;
+}
+
+header h1 {
+  margin: 0 0 10px;
+  font-size: clamp(27px, 5vw, 39px);
+}
+
+.subtitulo {
+  margin: 0;
+  color: #fff1f4;
+  font-size: 16px;
+}
+
+.introduccion {
+  padding: 22px;
+  background: #fff7f9;
+  border-left: 6px solid var(--vino);
+  border-radius: 14px;
+  margin-bottom: 22px;
+  font-size: 17px;
+  text-align: justify;
+}
+
+.prenda {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  gap: 25px;
+  align-items: center;
+  padding: 24px 0;
+  border-bottom: 2px dashed var(--linea);
+}
+
+.foto {
+  width: 100%;
+  height: 235px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #f8e7ed, #f2dfc6);
+  border: 2px solid #e8ced5;
+  color: #875266;
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
+}
+
+.foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.prenda h2 {
+  margin: 0 0 12px;
+  color: var(--vino);
+  font-size: 24px;
+}
+
+.descripcion {
+  margin: 0;
+  font-size: 17px;
+  text-align: justify;
+}
+
+.nota {
+  margin-top: 30px;
+  padding: 23px;
+  background: #fff8ed;
+  border: 1px solid #f0dfc4;
+  border-left: 6px solid var(--dorado);
+  border-radius: 16px;
+}
+
+.nota h2 {
+  color: var(--vino);
+  font-size: 22px;
+  margin: 0 0 12px;
+}
+
+.nota p {
+  margin: 0;
+  font-size: 17px;
+  text-align: justify;
+}
+
+.volver {
+  display: block;
+  width: fit-content;
+  margin: 28px auto 0;
+  padding: 13px 23px;
+  border-radius: 30px;
+  background: var(--vino);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.volver:hover {
+  background: #70283f;
+  transform: scale(1.04);
+}
+
+.ayuda {
+  text-align: center;
+  color: #88747a;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+@media(max-width: 600px) {
+  body {
+    padding: 12px 8px;
+  }
+
+  .pagina {
+    padding: 18px 14px;
+    border-radius: 17px;
+  }
+
+  .prenda {
+    grid-template-columns: 1fr;
+    gap: 13px;
+    padding: 22px 0;
+  }
+
+  .foto {
+    height: 230px;
+  }
+
+  .prenda h2 {
+    font-size: 21px;
+  }
+
+  .descripcion,
+  .introduccion,
+  .nota p {
+    font-size: 16px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<main class="pagina">
+
+<header>
+  <h1>🏔️ Vestimentas Tradicionales de Potosí 🌺</h1>
+  <p class="subtitulo">
+    Tejidos, colores y tradiciones que representan nuestra identidad cultural.
+  </p>
+</header>
+
+<section class="introduccion">
+  <p>
+    El departamento de Potosí posee una gran diversidad cultural,
+    formada por comunidades quechuas y otras poblaciones con
+    tradiciones propias. Sus vestimentas varían según la región,
+    el municipio y la comunidad. Entre las prendas más
+    representativas se encuentran las polleras, las mantas,
+    los aguayos, los ponchos y los sombreros. Sus colores,
+    tejidos y diseños reflejan la historia, el trabajo
+    artesanal y la identidad de sus habitantes.
+  </p>
+</section>
+
+<section class="prenda">
+  <div class="foto">
+    <img src="piroma.jpeg" alt="Pollera tradicional potosina">
+  </div>
+  <div>
+    <h2>1. Pollera</h2>
+    <p class="descripcion">
+      Es una falda amplia que forma parte de la vestimenta
+      de muchas mujeres de la región. Puede variar en sus
+      colores, telas y adornos de acuerdo con la comunidad
+      y la ocasión. Es una prenda que expresa costumbres
+      e identidad cultural.
+    </p>
+  </div>
+</section>
+
+<section class="prenda">
+  <div class="foto">
+    <img src="pseñora.jpeg" alt="Manta o lliclla tradicional">
+  </div>
+  <div>
+    <h2>2. Manta o lliclla</h2>
+    <p class="descripcion">
+      Es una pieza textil que se lleva sobre los hombros
+      o la espalda. En algunas comunidades también se
+      utiliza para cargar objetos o productos. Sus tejidos
+      y diseños muestran conocimientos artesanales
+      transmitidos entre generaciones.
+    </p>
+  </div>
+</section>
+
+<section class="prenda">
+  <div class="foto">
+    <img src="pagu.jpeg" alt="Aguayo tradicional potosino">
+  </div>
+  <div>
+    <h2>3. Aguayo</h2>
+    <p class="descripcion">
+      Es un tejido tradicional andino, generalmente
+      rectangular y con diseños de colores. Se utiliza
+      para transportar productos, cargar a los niños
+      o complementar la vestimenta. Sus figuras y
+      combinaciones de colores expresan la tradición
+      de cada comunidad.
+    </p>
+  </div>
+</section>
+
+<section class="prenda">
+  <div class="foto">
+    <img src="ppomco.jpeg" alt="Poncho tradicional potosino">
+  </div>
+  <div>
+    <h2>4. Poncho</h2>
+    <p class="descripcion">
+      Es una prenda de abrigo utilizada por hombres
+      en distintas comunidades. Se elabora con tejidos
+      de lana y ayuda a proteger del frío del altiplano
+      y de las zonas altas. Sus colores y diseños
+      cambian según el lugar.
+    </p>
+  </div>
+</section>
+
+<section class="prenda">
+  <div class="foto">
+    <img src="psobre.jpeg" alt="Sombrero tradicional potosino">
+  </div>
+  <div>
+    <h2>5. Sombrero</h2>
+    <p class="descripcion">
+      Se utiliza para proteger la cabeza del sol,
+      el viento y el frío. Existen diferentes formas
+      y estilos en el departamento, por lo que el tipo
+      de sombrero puede variar de una comunidad a otra.
+    </p>
+  </div>
+</section>
+
+<section class="prenda">
+  <div class="foto">
+    <img src="piroma.jpeg" alt="Abarcas tradicionales">
+  </div>
+  <div>
+    <h2>6. Abarcas y calzado</h2>
+    <p class="descripcion">
+      En algunas comunidades se usan abarcas, un tipo
+      de calzado sencillo y resistente, adecuado para
+      caminar por caminos rurales. En otros lugares
+      se utilizan zapatos, según las actividades
+      y las costumbres de cada familia.
+    </p>
+  </div>
+</section>
+
+<aside class="nota">
+  <h2>🌄 ¿Qué representa la vestimenta potosina?</h2>
+  <p>
+    Representa la historia, las costumbres y la identidad
+    de las comunidades del departamento. Sus tejidos,
+    colores y prendas reflejan los conocimientos
+    artesanales y las tradiciones que se transmiten
+    de generación en generación.
+  </p>
+
+  <h2 style="margin-top:20px;">💡 Dato curioso</h2>
+  <p>
+    Los tejidos tradicionales de Potosí no son solamente
+    prendas de vestir: también pueden utilizarse para
+    cargar alimentos y objetos durante las actividades
+    cotidianas. Sus diseños y técnicas textiles forman
+    parte de los conocimientos culturales de distintas
+    comunidades del departamento.
+  </p>
+</aside>
+
+<a class="volver" href="index.html">
+  ← Volver a la página principal
+</a>
+
+<p class="ayuda">
+  Guarda las seis fotografías en la misma carpeta que este archivo HTML.
+</p>
+
+</main>
+</body>
+</html>

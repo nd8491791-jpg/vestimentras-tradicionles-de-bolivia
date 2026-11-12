@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vestimentas Tradicionales de Tarija</title>
+
+<style>
+:root {
+  --vino: #963c55;
+  --rosa: #f8e8ed;
+  --dorado: #d5a45b;
+  --texto: #342b2e;
+  --linea: #efd9df;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 28px 16px;
+  background: linear-gradient(135deg, #f8e9ed, #fff8f0, #f5e5e8);
+  color: var(--texto);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+.pagina {
+  width: min(950px, 100%);
+  margin: auto;
+  padding: 32px;
+  background: white;
+  border: 1px solid #efdce1;
+  border-radius: 25px;
+  box-shadow: 0 8px 28px rgba(100, 35, 55, .12);
+}
+
+header {
+  text-align: center;
+  padding: 28px 16px;
+  background: linear-gradient(135deg, #963c55, #bd667d);
+  color: white;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  border-bottom: 5px solid var(--dorado);
+}
+
+header h1 {
+  margin: 0 0 10px;
+  font-size: clamp(27px, 5vw, 39px);
+}
+
+.subtitulo {
+  margin: 0;
+  font-size: 16px;
+  color: #fff3f5;
+}
+
+.introduccion {
+  padding: 21px;
+  background: #fff7f9;
+  border-left: 6px solid var(--vino);
+  border-radius: 14px;
+  font-size: 17px;
+  margin-bottom: 22px;
+  text-align: justify;
+}
+
+.prenda {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 25px;
+  align-items: center;
+  padding: 24px 0;
+  border-bottom: 2px dashed var(--linea);
+}
+
+.foto {
+  width: 100%;
+  height: 235px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #fae9ee, #f2d8e0);
+  border: 2px solid #edced8;
+  color: #895164;
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
+}
+
+.foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.prenda h2 {
+  margin: 0 0 12px;
+  color: var(--vino);
+  font-size: 24px;
+}
+
+.descripcion {
+  margin: 0;
+  font-size: 17px;
+  text-align: justify;
+}
+
+.nota {
+  margin-top: 30px;
+  padding: 23px;
+  border-left: 6px solid var(--dorado);
+  background: #fff7f0;
+  border-radius: 16px;
+  border: 1px solid #f1dfca;
+  border-left-width: 6px;
+}
+
+.nota h2 {
+  color: var(--vino);
+  font-size: 22px;
+  margin: 0 0 12px;
+}
+
+.nota p {
+  margin: 0;
+  font-size: 17px;
+  text-align: justify;
+}
+
+.volver {
+  display: block;
+  width: fit-content;
+  margin: 28px auto 0;
+  padding: 13px 23px;
+  border-radius: 30px;
+  background: var(--vino);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.volver:hover {
+  background: #702b40;
+  transform: scale(1.04);
+}
+
+.ayuda {
+  color: #88747a;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media(max-width: 600px) {
+  body {
+    padding: 12px 8px;
+  }
+
+  .pagina {
+    padding: 18px 14px;
+    border-radius: 17px;
+  }
+
+  .prenda {
+    grid-template-columns: 1fr;
+    gap: 13px;
+    padding: 22px 0;
+  }
+
+  .foto {
+    height: 230px;
+  }
+
+  .prenda h2 {
+    font-size: 21px;
+  }
+
+  .descripcion,
+  .introduccion,
+  .nota p {
+    font-size: 16px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<main class="pagina">
+
+<header>
+  <h1>🌺 Vestimentas Tradicionales de Tarija 🌺</h1>
+  <p class="subtitulo">
+    Tradición, cultura e identidad de los valles y el Chaco tarijeño.
+  </p>
+</header>
+
+<section class="introduccion">
+  <p>
+    Tarija tiene una gran diversidad cultural que se expresa
+    en las tradiciones de sus valles, zonas rurales y comunidades
+    del Chaco. La vestimenta cambia según la región, el clima
+    y la ocasión. Entre las prendas y elementos tradicionales
+    se encuentran los sombreros, pañuelos, camisas, pantalones,
+    polleras y abarcas. Sus materiales y formas de uso están
+    relacionados con las actividades cotidianas y las costumbres
+    de cada comunidad.
+  </p>
+</section>
+
+<section class="prenda">
+  <div class="foto">
+    <img src="tchica.jpeg" alt="Tipoy tradicional">
+  </div>
+  <div>
+    <h2>1. Tipoy</h2>
+    <p class="descripcion">
+      Es un vestido amplio, ligero y generalmente colorido,
+      utilizado tradicionalmente por mujeres de algunas zonas
+      cálidas del oriente y del Chaco. Su diseño permite
+      comodidad en climas calurosos y representa las
+      tradiciones de las comunidades donde se utiliza.
+    </p>
+  </div>
+</section>
+
+<section class="prenda">
+  <div class="foto">
+    <img src="tsombre.jpeg" alt="Sombrero tradicional">
+  </div>
+  <div>
+    <h2>2. Sombrero</h2>
+    <p class="descripcion">
+      Se utiliza para protegerse del sol durante las
+      actividades al aire libre. En las comunidades rurales
+      de Tarija existen distintos estilos y materiales,
+      de acuerdo con el clima y las costumbres de cada zona.
+    </p>
+  </div>
+</section>
+
+<section class="prenda">
+  <div class="foto">
+    <img src="tpa.jpeg" alt="Pañuelo tradicional">
+  </div>
+  <div>
+    <h2>3. Pañuelo</h2>
+    <p class="descripcion">
+      Es un accesorio que puede llevarse al cuello o como
+      complemento de la vestimenta. Sus colores y formas
+      de uso varían según la tradición y la ocasión.
+      También puede formar parte de la indumentaria festiva.
+    </p>
+  </div>
+</section>
+
+<section class="prenda">
+  <div class="foto">
+    <img src="tchicon.jpeg" alt="Camisa y pantalón tradicional">
+  </div>
+  <div>
+    <h2>4. Camisa y pantalón</h2>
+    <p class="descripcion">
+      En la vestimenta masculina se utilizan camisas
+      y pantalones cómodos, adecuados para las actividades
+      del campo y la vida cotidiana. En algunas ocasiones
+      se complementan con sombreros, pañuelos o fajas.
+    </p>
+  </div>
+</section>
+
+<section class="prenda">
+  <div class="foto">
+    <img src="tblusa.jpeg" alt="Pollera y blusa tradicional">
+  </div>
+  <div>
+    <h2>5. Pollera y blusa</h2>
+    <p class="descripcion">
+      En algunas comunidades y celebraciones se utilizan
+      polleras combinadas con blusas. Los colores,
+      adornos y diseños dependen de las costumbres
+      locales y de la ocasión en que se viste este conjunto.
+    </p>
+  </div>
+</section>
+
+<section class="prenda">
+  <div class="foto">
+    <img src="tzapato.jpeg" alt="Abarcas tradicionales">
+  </div>
+  <div>
+    <h2>6. Abarcas</h2>
+    <p class="descripcion">
+      Son un tipo de calzado sencillo y resistente que
+      se utiliza en algunas zonas rurales. Resultan
+      prácticas para caminar y realizar actividades
+      cotidianas, y forman parte de la vestimenta
+      de distintas comunidades.
+    </p>
+  </div>
+</section>
+
+<aside class="nota">
+  <h2>🌄 ¿Qué representa la vestimenta tarijeña?</h2>
+  <p>
+    Representa las costumbres, la historia y la identidad
+    de las comunidades del departamento. Sus prendas
+    reflejan la adaptación al clima y las actividades
+    de los habitantes de los valles y del Chaco.
+  </p>
+
+  <h2 style="margin-top:20px;">💡 Dato curioso</h2>
+  <p>
+    Tarija reúne tradiciones de los valles y del Chaco.
+    Por eso, no todas sus comunidades utilizan la misma
+    vestimenta: los estilos de las prendas y los accesorios
+    pueden cambiar de una localidad a otra.
+  </p>
+</aside>
+
+<a class="volver" href="index.html">
+  ← Volver a la página principal
+</a>
+
+<p class="ayuda">
+  Guarda las seis fotografías en la misma carpeta que este archivo HTML.
+</p>
+
+</main>
+</body>
+</html>
